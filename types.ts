@@ -34,34 +34,34 @@ export interface PortfolioSettings extends CosmicObject {
 }
 
 // Project
-// export interface Project extends CosmicObject {
-//   type: 'projects';
-//   metadata: {
-//     project_name: string;
-//     short_description: string;
-//     full_description?: string;
-//     technologies?: string[];
-//     project_image?: {
-//       url: string;
-//       imgix_url: string;
-//     };
-//     live_demo_url?: string;
-//     github_url?: string;
-//     featured?: boolean;
-//     order?: number;
-//   };
-// }
-
-interface projects {
-    id: number;
-    title: string;
-    slug: string;
-    metadata: {
-      project_name: string;
-      project_image: string;
-      featured: boolean;
+export interface Project extends CosmicObject {
+  type: 'projects';
+  metadata: {
+    project_name: string;
+    short_description: string;
+    full_description?: string;
+    technologies?: string[];
+    project_image?: {
+      url: string;
+      imgix_url: string;
     };
+    live_demo_url?: string;
+    github_url?: string;
+    featured?: boolean;
+    order?: number;
+  };
 }
+
+// interface projects {
+//     id: number;
+//     title: string;
+//     slug: string;
+//     metadata: {
+//       project_name: string;
+//       project_image: string;
+//       featured: boolean;
+//     };
+// }
 
 
 
